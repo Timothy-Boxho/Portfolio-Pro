@@ -1,0 +1,1175 @@
+*{
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+#body{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+#top-icone {
+    z-index: 1;
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+}
+
+
+
+
+#arrow {
+    background-image: url("img/fleche.PNG");
+    width: 75px;
+    height: 75px;
+    background-repeat: no-repeat;
+    transition: 0.2s ease-in-out;
+    border-radius: 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+
+    
+}
+
+
+.logo{
+    font-size: 2rem;
+    margin: 0.5rem  ;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #FFD03F;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: #FFD03F;
+    padding: 1rem;
+    display: block;
+    font-size: 25px;
+}
+
+.navbar-links li:hover a:hover{
+    background: #FFD03F;    
+    transition: background-color 0.2s ease-in-out;
+    color: black;
+    
+}
+
+
+.email a{
+    text-decoration: none;
+    color: white;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 6px;
+}
+
+
+
+@media(max-width :768px ){
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: 0.5rem 1rem;
+    
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    .email a{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #logo{
+      margin-right: 900px;
+  }
+
+  /* By Dominik Biedebach @domobch */
+  
+
+
+
+
+
+
+
+/* Keyframes */
+
+  
+
+
+
+
+
+
+
+
+
+
+/* .nav{
+    position: fixed;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    
+
+}
+
+
+
+
+
+ .block{
+    padding: 10px 10px 10px 10px;
+    margin: 30px 30px 30px 30px;
+    background-color: #FFD03F;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+ }
+
+.block:hover {
+    background-color: black;
+    transition: 0.2s ease-in-out;
+}
+
+
+.Nav a{
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.Nav a:hover{
+    color: #FFD03F;
+    transition: 0.2s ease-in-out;
+}
+ */
+
+
+
+/* ------------------- PRESENTATION --------------------------- */
+/* ------------------- PRESENTATION --------------------------- */
+/* ------------------- PRESENTATION --------------------------- */
+/* ------------------- PRESENTATION --------------------------- */
+/* ------------------- PRESENTATION --------------------------- */
+
+
+
+.parallax_presentation{
+    height: 900px;
+
+}
+
+.parallax_presentation_video {
+
+position: fixed;
+top: 0;
+z-index: -9999;
+background-size: cover;
+}
+
+
+.parallax_presentation_video video{
+   
+    height: 100%;
+}
+
+@media(max-width :768px ){
+    /* .parallax_presentation_video video{
+    } */
+    
+}
+
+
+.Presentation{
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    width: 100%;
+    height: 337px;
+    text-align: center;
+ 
+    
+
+}
+
+@media(max-width :500px ){
+    .Presentation{
+        height: 500px;
+    }
+}
+
+.Presentation p{
+   font-family: 'Courier New', Courier, monospace;
+   font-size: large;
+
+   text-align: center ;
+   justify-content: center;
+}
+
+
+
+
+.Banniere{
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFD03F;
+    text-shadow: 0 0 0.2em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0),
+        0 0 0.2em rgb(0, 0, 0)
+
+}
+
+
+
+
+
+
+
+/* -------------------PORTFOLIO--------------------------- */
+/* -------------------PORTFOLIO--------------------------- */
+/* -------------------PORTFOLIO--------------------------- */
+/* -------------------PORTFOLIO--------------------------- */
+/* -------------------PORTFOLIO--------------------------- */
+/* -------------------PORTFOLIO--------------------------- */
+
+#parallax_portfolio{
+    /* The image used */
+    background-image: url('img/Snapchat-1502060399.jpg');
+
+    /* Full height */
+    width: 100%;
+    height: 332px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+#portfolio {
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+@media(max-width :768px ){
+    #portfolio {
+        height: 600px;
+    }
+}
+
+@media(max-width :500px ){
+    #portfolio{
+        height: 1300px;
+    } 
+}
+
+
+
+
+#mise_avant {
+    width: 718px;
+    height: 556px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#video_avant {
+    width: 718px;
+    height: 404px;
+    border: none;
+}
+
+#liste_video {
+    width: 1470px;
+    height: 371px;
+}
+
+#slider {
+    min-width: 1470px;
+    min-height: 251px;
+    display: flex;
+    overflow-x: hidden;
+}
+
+#slider:hover {
+    overflow-x: auto;
+}
+
+
+/*style du scrollbar du slider*/
+#slider:hover::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+#slider:hover::-webkit-scrollbar-thumb {
+    background: #FFD03F;
+    border-radius: 0px;
+    height: 8px;
+}
+
+#slider:hover::-webkit-scrollbar-thumb:hover {
+    background: #FFD03F;
+}
+
+#slider:hover::-webkit-scrollbar-track {
+    background: none;
+    width: 30px;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}
+
+
+.projet {
+    min-width: 341px;
+    height: 287px;
+    margin-right: 35px;
+}
+
+.video_autre {
+    width: 341px;
+    height: 192px;
+    border: none;
+}
+
+.projet p {
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+.categories{
+    display: flex;
+    justify-content: flex-start;
+    justify-content:center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    gap: 100px;
+  
+
+}
+
+
+@media(max-width :768px ){
+    .categories{
+        margin-top: 40vh;
+        
+      
+    
+    }
+}
+
+
+
+.categorie{
+    
+    width: auto;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+  
+}
+
+
+
+
+
+.category-links{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.categorie img{
+    max-width: 90%;
+    max-height: 90%;
+    justify-content: center;
+}
+
+.categorie h1{
+    color: white;
+    text-align: center;
+}
+
+
+
+.Tout-cat{
+    text-align: center;
+}
+
+.annee{
+    background-color: black;
+ 
+  
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    gap: 100px;
+
+
+}
+
+
+
+@media(max-width :768px ){
+    .annee{
+        padding-top: 300px;
+    }
+}
+
+
+
+.cover{
+    z-index: -1;
+    background-color: black;
+    width: 100%;
+    height: 100px ;
+    margin-bottom: -101px;
+}
+
+/* ---------- BOX ANIMATION -------------- - */
+/* ---------- BOX ANIMATION -------------- - */
+
+:active, :hover, :focus {
+    outline: 0!important;
+    outline-offset: 0;
+  }
+  ::before,
+  ::after {
+    position: absolute;
+    content: "";
+  }
+  
+  .btn-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+      
+  }
+  .btn {
+    position: relative;
+    
+    
+
+  
+    
+
+  }
+
+
+  .btn.hover-border-2::before,
+  .btn.hover-border-2::after {
+    width: 10%; height: 25%;
+    transition: 0.35s;
+  }
+  .btn.hover-border-2::before {
+    bottom: 0; left: 0;
+    border-left: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+  }
+  .btn.hover-border-2::after {
+    top: 0; right: 0;
+    border-right: 3px solid rgb(255, 255, 255);
+    border-top: 3px solid rgb(255, 255, 255);
+  }
+  .btn.hover-border-2:hover::before,
+  .btn.hover-border-2:hover::after {
+    width: 99%;
+    height: 99%;
+  }
+
+
+
+
+
+
+
+/* ----------------------- GALLERY ------------ */
+
+.categories .categorie img{
+    width: 90px;
+}
+
+
+.categories .controls .button{
+    cursor: pointer;
+    
+}
+
+
+.categories .active{
+    border: 5px solid white;
+    
+}
+
+.annee .active{
+    border: 5px solid white;
+}
+
+
+.content-container{
+    background-color: black;
+}
+
+
+.content-container .Photographie .annee1{
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    
+
+
+}
+
+.content-container .Photographie .annee2{
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    
+
+
+}
+
+.content-container .Motion-design .annee1{
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    
+
+
+}
+
+.content-container .Motion-design .annee2{
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    
+
+
+}
+
+
+
+
+.content-container .Audio-visuel .annee1{
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    
+
+
+}
+
+.content-container .Audio-visuel .annee2{
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    
+
+
+}
+
+.content-container .Programmation .annee1{
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    
+
+
+}
+
+.content-container .Programmation    .annee2{
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    
+
+
+}
+
+
+
+.content-container .projet-etude .annee1{
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    
+
+
+}
+
+.content-container .projet-etude    .annee2{
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    
+
+
+}
+.content-container .image{
+    width: 17rem
+
+}
+
+.content-container .image img{
+    
+    width: 100%;
+    max-height: 50%;
+   
+}
+
+
+.content-container a{
+    text-decoration: none;
+    color: white;
+
+}
+
+
+/* 
+------------------------------------------------- */
+
+
+
+
+
+
+#parallax_a_propos {
+    /* The image used */
+    background-image: url('img/pp_edited.jpg');
+    
+
+    /* Full height */
+    width: 100%;
+    height: 332px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#à_propos {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 500px;
+    
+   
+  
+ 
+}
+
+
+
+ @media(max-width :768px ){
+      #à_propos{
+          height: 600px;
+      }
+  }
+#contenu_à_propos {
+
+    text-align: center;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 10px;
+  }
+
+
+
+ 
+
+
+@media(max-width :1000px ){
+    #contenu_à_propos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        
+    }
+
+
+    #à_propos {
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 900px;
+        border: none;
+      
+     
+    }
+}
+
+
+
+
+.img-me{
+    display: block;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+#contenu_à_propos img{
+    border-radius: 100%; max-width: 60%;
+    margin-top: 20px;
+}
+
+#bio {
+    margin-top: 50px;
+    text-align: center;
+   justify-content: center;
+   
+}
+
+#bio p {
+    margin-bottom: 76px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#bio a {
+    
+    width: 100%;
+    border: none;
+    background-color: #FFD03F;
+    border-radius: 5px;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+    color: black ;
+  }
+  
+  #bio a:hover {
+    background: black;    
+    transition: background-color 0.3s ease-in-out;
+    color: #FFD03F;
+    border: 0.5px solid #FFD03F;
+  }
+
+
+
+#contenu_à_propos button {
+    margin-top: -600px;
+    background-color: black;
+
+  
+  color: white;
+
+
+  font-size: 16px;
+}
+#contenu_à_propos button a{
+    text-decoration: none;
+}
+
+.bouton:hover .lien_cv {
+    color: #FFD03F;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+@media(max-width :768px ){
+
+ #contenu_à_propos img{
+    border-radius: 100%; max-width: 75%;
+    }
+}
+
+
+
+
+
+
+/* ------------------CONTACT--------------------- */
+/* ------------------CONTACT--------------------- */
+/* ------------------CONTACT--------------------- */
+/* ------------------CONTACT--------------------- */
+/* ------------------CONTACT--------------------- */
+/* ------------------CONTACT--------------------- */
+/* ------------------CONTACT--------------------- */
+
+
+#parallax_contact{
+    /* The image used */
+    background-image: url('img/IMG_2143.jpg');
+
+    /* Full height */
+    width: 100%;
+    height: 332px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-div{
+    background-color: black;
+
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    
+  }
+  
+
+  #contact {
+    background: black;
+    padding: 25px;
+    margin: 150px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border: 3px solid #FFD03F;
+    color: white;
+  }
+  
+  #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+  #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  
+ 
+  #contact input, #contact textarea {
+    width: 100%;
+    border: 1px solid white;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+  }
+  
+
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  
+  #contact button {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background-color: #FFD03F;
+    border-radius: 5px;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+    color: black ;
+  }
+  
+  #contact button:hover {
+    background: black;    
+    transition: background-color 0.3s ease-in-out;
+    color: #FFD03F;
+    border: 0.5px solid #FFD03F;
+  }
+  
+
+  .info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .info img{
+      max-height: 35px;
+      color: #FFD03F;
+  }
+
+
+
+
+
+
+
+
+
+
+/* ------------------FOOTER--------------------- */
+/* ------------------FOOTER--------------------- */
+/* ------------------FOOTER--------------------- */
+/* ------------------FOOTER--------------------- */
+/* ------------------FOOTER--------------------- */
+
+
+
+footer{
+    background-color: black;
+}
+
+
+
+
+hr{
+    background-color: black;
+    color: #FFD03F;
+    
+}
+
+
+
+
+footer{
+  padding-top: 30px;
+  font-family: Apercu_M;
+  text-align: center;
+  color: white;
+  height: 100%;
+  background-color: rgb(12, 12, 12);
+ 
+}
+
+footer hr{
+    border: 1px solid #FFD03F;
+}
+footer>p{
+  margin-bottom: 30px;
+  z-index: 1002;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+#fyoutube{
+
+  margin-left: -65px;
+}
+
+#flinkedin{
+  
+  margin-left: 65px;
+}
+
+
+#imgyoutubeb, #imglinkedinb{
+  transition: 1s;
+}
+#imgyoutubeb:hover, #imglinkedinb:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+#contactfooter{
+  position: absolute;
+  left: 80px;
+  margin-top: -80px;
+  text-align: left;
+  list-style: none;
+  line-height: 40px;
+}
+.iconfooter{
+  position: absolute;
+  left: -40px;
+  padding-top: 6px;
+}
+.mailto{
+  cursor: pointer;
+  transition: 0.3s;
+}
+.mailto:hover{
+  transform: scale(1.05);
+}
+.mailto>a{
+  color: white;
+  float: left;
+  position: relative;
+}
+
+
+
+
+
+  
